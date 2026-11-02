@@ -52,7 +52,6 @@ The basics you need first on any freshly set-up Pi.
 | `top` | Shows running processes live, sorted by CPU usage – press `q` to quit, `P`/`M` to re-sort by CPU or memory. |
 | `htop` | Colorful, scrollable, mouse-friendly alternative to `top` with a per-core usage bar (install with `sudo apt install htop` if needed). |
 | `lscpu` | Shows core count, architecture, clock range, and cache sizes of the CPU in a structured format. |
-| `vcgencmd get_camera` | Returns `supported=1 detected=1` when a camera module is correctly detected and enabled – the first thing to check for camera issues. |
 
 > **Practical tip:** For 24/7 operation and backups (see section 10), it's worth using a card with high write endurance, e.g. the [Samsung Pro Endurance microSD](https://www.amazon.de/dp/B0D1CHNC49?tag=raspbertipps-21) – regular consumer cards aren't built for round-the-clock logging. More in our [SD card comparison](https://raspberry.tips/en/raspberrypi-einsteiger/best-sd-card-for-raspberry-pi).
 
@@ -160,7 +159,6 @@ The basics you need first on any freshly set-up Pi.
 | `rpicam-still --list-cameras` | Lists every camera module detected by the system, with sensor name and supported resolutions. |
 | `rpicam-still -o image.jpg` | Captures a single photo after a brief autofocus/exposure adjustment and saves it under the given name. |
 | `rpicam-vid -t 10000 -o video.h264` | Records a video for the duration given in `-t`, in milliseconds (here: 10 seconds). |
-| `vcgencmd get_camera` | Quick software check whether the camera was detected (`detected=1`) and enabled (`supported=1`), without capturing an image. |
 
 ## Bootloader, Firmware & Updates
 
