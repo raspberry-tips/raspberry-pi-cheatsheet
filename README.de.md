@@ -52,7 +52,6 @@ Das Grundgerüst, das auf jedem frisch aufgesetzten Pi als Erstes gebraucht wird
 | `top` | Zeigt laufende Prozesse live, sortiert nach CPU-Auslastung – mit `q` beenden, mit `P`/`M` nach CPU bzw. RAM neu sortieren. |
 | `htop` | Farbige, scrollbare Alternative zu `top` mit Maus-Bedienung und Balkenanzeige pro CPU-Kern (ggf. `sudo apt install htop`). |
 | `lscpu` | Zeigt Kernanzahl, Architektur, Taktbereich und Cache-Größen der CPU in strukturierter Form. |
-| `vcgencmd get_camera` | Gibt `supported=1 detected=1` aus, wenn ein Kameramodul korrekt erkannt und aktiviert wurde – erste Anlaufstelle bei Kamera-Problemen. |
 
 > **Praxis-Tipp:** Für Dauerbetrieb und Backups (siehe Punkt 10) lohnt sich eine Karte mit hoher Schreibfestigkeit, z. B. die [Samsung Pro Endurance microSD](https://www.amazon.de/dp/B0D1CHNC49?tag=raspbertipps-21) – normale Consumer-Karten sind für 24/7-Logging nicht ausgelegt. Mehr dazu in unserem [SD-Karten-Vergleich](https://raspberry.tips/raspberrypi-einsteiger/die-richtige-sd-karte-fuer-den-raspberry-pi).
 
@@ -160,7 +159,6 @@ Das Grundgerüst, das auf jedem frisch aufgesetzten Pi als Erstes gebraucht wird
 | `rpicam-still --list-cameras` | Listet alle vom System erkannten Kameramodule mit Sensor-Namen und unterstützten Auflösungen auf. |
 | `rpicam-still -o bild.jpg` | Nimmt nach kurzem Autofokus-/Belichtungsabgleich ein einzelnes Foto auf und speichert es unter dem angegebenen Namen. |
 | `rpicam-vid -t 10000 -o video.h264` | Nimmt ein Video mit der in `-t` angegebenen Dauer in Millisekunden auf (hier: 10 Sekunden). |
-| `vcgencmd get_camera` | Schneller Software-Check, ob die Kamera erkannt (`detected=1`) und im System aktiviert (`supported=1`) ist, ohne ein Bild aufzunehmen. |
 
 ## Bootloader, Firmware & Updates
 
